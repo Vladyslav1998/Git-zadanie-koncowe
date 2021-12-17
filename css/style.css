@@ -1,3 +1,24 @@
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.7;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.container {
+  max-width: 1140px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+section {
+  padding: 96px 0;
+}
+
+/* Navigation */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFNQSxXQUFBO0FBRUE7RUFDRyxzQkFBQTtBQ05IOztBRFNBO0VBQ0ksU0FBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBQ05KOztBRFNBO0VBQ0csaUJBQUE7RUFDQSxlQUFBO0VBQ0EsY0FBQTtBQ05IOztBRFNBO0VBQ0csZUFBQTtBQ05IOztBRFNBLGVBQUEiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
