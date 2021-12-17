@@ -6,6 +6,11 @@ $color-three: #222222;
 $color-four: #F7F7F7;
 $color-five: #777777;
 
+$font-main: 'Roboto', sans-serif;
+$font-lite: 'Lobster', cursive;
+
+$transition: all 1s;
+
 /* Global */
 
 *, *::before, *::after {
@@ -29,4 +34,43 @@ section {
 }
 
 /* Navigation */
+
+.navigation {
+   height: 100vh;
+   position: relative;
+   background-image: url('/images/www.madebyvadim.com.jpg');
+   background-position: center center;
+   background-size: cover; 
+}
+
+.nav-menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .nav-logo {
+      color: $color-one;
+      text-decoration: none;
+      font-family: $font-lite;
+      font-size: 28px;
+      padding-left: 85px;
+   }
+   ul {
+      display: flex;
+      padding-right: 35px;
+   }
+   li {
+      list-style-type: none;
+      padding: 0 20px;
+   }
+   a {
+      text-decoration: none;
+      font-family: $font-main;
+      color: $color-four;
+      font-size: 17px;
+      font-family: $font-main;
+   }
+   a:hover {
+      color: $color-one;
+   }
+}
 
