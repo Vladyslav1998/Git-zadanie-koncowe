@@ -1,0 +1,32 @@
+/* Variables */
+
+$color-one: #FED136;
+$color-two: #FFFFFF;
+$color-three: #222222;
+$color-four: #F7F7F7;
+$color-five: #777777;
+
+/* Global */
+
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.container {
+   max-width: 1140px;
+   padding: 20px 0;
+   margin: 0 auto;
+}
+
+section {
+   padding: 96px 0;
+}
+
+/* Navigation */
+
