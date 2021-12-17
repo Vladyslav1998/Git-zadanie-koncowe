@@ -46,22 +46,33 @@ section {
 .nav-menu {
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   padding-top: 30px;
    .nav-logo {
-      color: $color-one;
+       color: $color-one;
       text-decoration: none;
       font-family: $font-lite;
       font-size: 28px;
       padding-left: 85px;
    }
+}
+
+.nav-menu { 
    ul {
       display: flex;
-      padding-right: 35px;
+      padding: 0 0 0 0;
+      margin: 0;
    }
+}
+
+.nav-menu {
    li {
       list-style-type: none;
       padding: 0 20px;
+      position: relative;
    }
+}
+
+.nav-menu {
    a {
       text-decoration: none;
       font-family: $font-main;
@@ -69,8 +80,35 @@ section {
       font-size: 17px;
       font-family: $font-main;
    }
+}
+
+.nav-menu {
    a:hover {
       color: $color-one;
+   }    
+}  
+
+.nav-menu {
+   ul {
+      ul {
+         flex-direction: column;
+         display: none;
+         li {
+            padding: 0;
+            margin: 0;   
+         }
+      }
    }
 }
 
+.nav-menu {
+   li:hover {
+      ul {
+         position: absolute;
+         display: block;
+         padding: 5px;
+         background-color: $color-three;
+         border-radius: 5px;
+      }
+   }
+}
