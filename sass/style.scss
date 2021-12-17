@@ -6,8 +6,9 @@ $color-three: #222222;
 $color-four: #F7F7F7;
 $color-five: #777777;
 
-$font-main: 'Roboto', sans-serif;
-$font-lite: 'Lobster', cursive;
+$font-one: 'Noto Sans Display', sans-serif;
+$font-two: 'EB Garamond', serif;
+$font-three: 'Lobster', cursive;
 
 $transition: all 1s;
 
@@ -21,6 +22,7 @@ body {
     margin: 0; 
     font-size: 20px;
     line-height: 1.7;
+    text-align: center;
 }
 
 .container {
@@ -43,14 +45,25 @@ section {
    background-size: cover; 
 }
 
+.navigation::before {
+ content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(41, 41, 41, 0.5);
+}
+
 .nav-menu {
    display: flex;
    justify-content: space-between;
    padding-top: 30px;
    .nav-logo {
-       color: $color-one;
+      position: relative;
+      color: $color-one;
       text-decoration: none;
-      font-family: $font-lite;
+      font-family: $font-three;
       font-size: 28px;
       padding-left: 85px;
    }
@@ -75,10 +88,9 @@ section {
 .nav-menu {
    a {
       text-decoration: none;
-      font-family: $font-main;
+      font-family: $font-one;
       color: $color-four;
       font-size: 17px;
-      font-family: $font-main;
    }
 }
 
@@ -111,4 +123,57 @@ section {
          border-radius: 5px;
       }
    }
+}
+
+/* Splash */
+
+.header-title {
+   position: absolute;
+   width: 100%;
+   top: 54%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.page-title {
+   color: $color-four;
+   font-family: $font-two;
+   font-size: 38px;
+   font-style: italic;
+   font-weight: 300;
+   word-spacing: 5px;
+   letter-spacing: 3.5px;
+   margin: 0;
+}
+
+.page-title-two {
+   color: $color-four;
+   font-family: $font-one;
+   font-size: 70px;
+   word-spacing: 10px;
+   letter-spacing: 3.3px;
+   margin: 0 0 65px 0;
+}
+
+.botton {
+   display: inline-block;  
+    min-width: 160px;
+    margin: 24 auto 0 auto;
+    padding: 16px 45px;
+    font-size: 18px;
+    font-family: $font-one;
+    text-align: center;
+    text-decoration: none;
+    color: $color-four;
+    background-position: 100% 0;
+    background-size: 300%;
+    background-color: $color-one;
+    transition: 1s;
+    border-radius: 4px;
+}
+
+.botton:hover {
+   color: $color-one;
+   background-color: $color-three;
+   transform: scale(1.1);
 }
