@@ -219,11 +219,40 @@ section {
 .wrap-title {
    font-family: $font-one;
    color: $color-three;
-   font-size: 21px;
+   font-size: 20px;
 }
 
 .wrap-subtitle {
    font-family: $font-two;
    color: $color-three;
    font-size: 18px;
+}
+
+/* Portfolio */
+
+.portfolio {
+   background-color: $color-four;
+   padding-bottom: 20px;
+}
+
+.wrapper-section {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.wrap-section {
+   flex: 0 1 33,333%;
+   margin-bottom: 65px;
+   background-color: $color-two;
+   height: 50%;
+   width: 30%;
+}
+
+.wrap-image {
+   img {
+      max-width: 100%;
+      object-fit: cover;
+   }
+
 }
