@@ -256,3 +256,38 @@ section {
    }
 
 }
+
+/* Footer */
+
+.footer-title {
+   display: flex;
+   align-items: flex-start;
+   line-height: 1;
+   i {
+      color: $color-three;
+      font-size: 15px;
+   }
+   small {
+      font-size: 15px;
+      font-family: $font-one;
+      color: $color-three;
+   }
+}
+
+.footer-links {
+   display: inline-block;
+   i {
+      margin-right: 9px;
+      line-height: 2;
+      font-size: 27px;
+      height: 55px;
+      width: 55px;
+      background-color: $color-three;
+      color: $color-two;
+      border-radius: 50px;
+      transition: 1s;
+   }
+   i:hover {
+      transform: scale(1.2);
+   }
+}
