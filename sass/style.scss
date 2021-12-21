@@ -275,19 +275,25 @@ section {
 }
 
 .footer-links {
-   display: inline-block;
-   i {
-      margin-right: 9px;
-      line-height: 2;
-      font-size: 27px;
-      height: 55px;
-      width: 55px;
-      background-color: $color-three;
-      color: $color-two;
-      border-radius: 50px;
-      transition: 1s;
-   }
-   i:hover {
-      transform: scale(1.2);
+   ul {
+
+      li {
+         display: inline-block;
+         font-size: 0;
+      }
+      i {
+         margin-right: 9px;
+         line-height: 2;
+         font-size: 27px;
+         height: 55px;
+         width: 55px;
+         background-color: $color-three;
+         color: $color-two;
+         border-radius: 50px;
+         transition: 1s;
+      }
+      i:hover {
+         transform: scale(1.2);
+      }
    }
 }
