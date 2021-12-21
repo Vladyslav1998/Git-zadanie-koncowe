@@ -297,3 +297,15 @@ section {
       }
    }
 }
+
+/* Media */
+
+@media(min-width: 360px)and(max-width: 991px) {
+   .wrap-section {
+      flex-direction: column;
+      justify-content: space-between;
+   }
+   .wrap-title, .wrap-subtitle {
+      font-size: 10px;
+   }
+}
